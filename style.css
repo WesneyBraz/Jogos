@@ -1,16 +1,21 @@
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("./img/fundo.jpg");
 }
-header{
+
+header {
     text-align: center;
 }
-hr{
-    background-color:#383fcf;
+
+hr {
+    background-color: #383fcf;
     height: 5px;
 }
 
-#primeiro,#segundo,#terceiro,#quarto{
+#primeiro,
+#segundo,
+#terceiro,
+#quarto {
     background-color: #383fcf;
     width: 103px;
     height: 40px;
@@ -18,109 +23,119 @@ hr{
     display: inline-block;
     text-align: center;
 }
-select{
+
+select {
     text-align: center;
 }
-.listas{
-    text-align:start;
+
+.listas {
+    text-align: start;
     font-weight: bold;
 }
-#fire-red,#ruby,#heart-gold,#emerald,#white-2,#omega-ruby,#platinum{
+
+#fire-red,
+#ruby,
+#heart-gold,
+#emerald,
+#white-2,
+#omega-ruby,
+#platinum {
     width: 210px;
     height: 210px;
 }
-.conteudo{
+
+.conteudo {
     height: 230px;
     display: table;
     margin-top: 20px;
     border-style: solid;
     border-color: white;
-    border-width:2px;
+    border-width: 2px;
 }
-.capa{
+
+.capa {
     width: 205px;
     height: 210px;
     margin-top: 10px;
     margin-left: 40px;
-    display:table-cell;
+    display: table-cell;
     float: left;
 }
-.informacoes{
-    display:table-cell;
+
+.informacoes {
+    display: table-cell;
     float: left;
     width: 190px;
     margin-top: -4px;
     margin-left: 10px;
     line-height: 30px;
     color: white;
-    font-size:smaller;
+    font-size: smaller;
     font-weight: bold;
 }
-section.conjunto{
+
+section.conjunto {
     display: inline-block;
     margin-right: 10%;
     margin-top: 100px;
     width: 500px;
     height: 250px;
 }
-.rodape{
+
+.rodape {
     margin-top: 20px;
     background-color: yellow;
 }
-.informacoes2{
-    display:table-cell;
-    float: left;
-    width: 190px;
-    margin-top: -4px;
-    margin-left: 10px;
-    line-height: 30px;
-    color: white;
-    font-size:smaller;
-    font-weight: bold;
-}
-#logo{
+
+#logo {
     width: 400px;
     margin: auto;
 }
-fieldset{
+
+fieldset {
     margin-top: 10px;
     margin-right: 5px;
     width: 150px;
+    text-align: center;
 }
-#pokemon-fire-red{
+
+#pokemon-fire-red,
+#pokemon-ruby {
     position: fixed;
-    top: 0px; bottom: 0px;
-    left: 0px;right: 0px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     margin: auto;
-    width: 70%;
-    height: 90%;
-    padding: 10px;
+    width: 30%;
+    height: 48%;
     border: solid 2px #383fcf;
     background-color: white;
-    display:none;
-}
-.pokemon{
-    display: table;
-    margin: 10px;
+    display: none;
 }
 
-.inicial{
-    width: 75%;
+.pokemon {
+    margin: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.inicial {
+    width: 90%;
     margin: auto;
-    display:table-cell;
-    float: left;
-    border: solid 2px #383fcf;
+}
 
+#inicial-hoenn {
+    width: 300px;
 }
-.status{
-    display:table-cell;
-    float: left;
-    line-height: 20px;
-    margin-left: 5%;
-    margin-top: 4%;
+
+.legenda-pokemon {
     color: black;
-    font-size:0.6rem;    
+    font-size: larger;
+    margin-top: 0px;
 }
-.exibir-pokemons{
-    margin-left: 45%;
+
+.botao {
+    text-align: center;
+    margin-bottom: 0px;
 }

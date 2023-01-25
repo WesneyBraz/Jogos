@@ -87,47 +87,22 @@
                 <div class="informacoes">
                     <fieldset>
                         <legend>INICIAIS DE KANTO:</legend>
-                                <P>Charmander - Fogo</P>
-                                <P>Bulbasaur - Grama</P>
-                                <P>Squirtle - Água</P>
-                                <button onclick="kanto()">VER POKEMONS</button>
+                        <P>Charmander - Fogo</P>
+                        <P>Bulbasaur - Grama</P>
+                        <P>Squirtle - Água</P>
+                        <button class="botao" onclick="kanto()">VER POKEMONS</button>
                     </fieldset>
                 </div>
                 <div class="informacoes" id="pokemon-fire-red">
                     <div class="pokemon">
-                        <img class="inicial" src="./img/charmander.jpg">
-                        <div class="status">
-                            <p>
-                                Ataque:84 - Ataque especial:109<br>
-                                Defesa:78 - Defesa especial:85 <br>
-                                Pontos de vida:78 - Velocidade:100<br>
-                                Total:534
+                        <img class="inicial" i src="./img/kanto.jpg">
+                        <div class="legenda-pokemon">
+                            <p class="legenda-pokemon">
+                                Charmander - Bulbasaur - Squirtle 
                             </p>
                         </div>
+                        <button class="botao" onclick="closeKanto()">FECHAR</button>
                     </div>
-                    <div class="pokemon">
-                        <img class="inicial" src="./img/bulbasaur.jpg">
-                        <div class="status">
-                            <p>
-                                Ataque:82 - Ataque especial:100<br>
-                                Defesa:83 - Defesa especial:100 <br>
-                                Pontos de vida:80 - Velocidade:80<br>
-                                Total:525
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pokemon">
-                        <img class="inicial" src="./img/squirtle.jpg">
-                        <div class="status">
-                            <p>
-                                Ataque:83 - Ataque especial:85<br>
-                                Defesa:100 - Defesa especial:105 <br>
-                                Pontos de vida:79 - Velocidade:78<br>
-                                Total:530
-                            </p>
-                        </div>
-                    </div>
-                    <button class="exibir-pokemons" onclick="closeKanto()">FECHAR</button> 
                 </div>
                 <div class="capa">
                     <img id="ruby" src="./img/ruby.jpg">
@@ -145,20 +120,23 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Torchic" name="pokemon-ruby" value="Torchic">
-                            <label for="Torchic">Torchic - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Treecko" name="pokemon-ruby" value="Treecko">
-                            <label for="Treecko">Treecko - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Mudkip" name="pokemon-ruby" value="Mudkip">
-                            <label for="Mudkip">Mudkip - Água</label>
-                        </div>
+                        <legend>INICIAIS DE HOENN:</legend>
+                        <P>Mudkip - Água</P>
+                        <P>Treecko - Grama</P>
+                        <P>Torchic - Fogo</P>
+                        <button class="botao" onclick="hoenn()">VER POKEMONS</button>
                     </fieldset>
+                </div>
+                <div class="informacoes pokemon" id="pokemon-ruby">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Mudkip - Treecko - Torchic 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="closeHoenn()">FECHAR</button>
+                    </div>
                 </div>
             </section>
             <section class="conteudo">
@@ -359,4 +337,5 @@
         Desenvolvido por: Wesney Braz
     </footer>
 </body>
+
 </html>
