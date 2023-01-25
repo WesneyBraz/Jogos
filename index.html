@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="./img/logo-4.png">
+        <img id="logo" src="./img/logo-4.png">
         <hr>
         <div class="listas">
             <div id="primeiro" class="inicio">
@@ -86,20 +86,48 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <form>
-                                <input type="radio" id="Charmander" name="pokemon" value="Charmander">
-                                <label for="Charmander">Charmander - Fogo</label>
-    
-                                <input type="radio" id="Bulbasaur" name="pokemon" value="Bulbasaur">
-                                <label for="Bulbasaur">Bulbasaur - Grama</label>
-    
-                                <input type="radio" id="Squirtle" name="pokemon" value="Squirtle">
-                                <label for="Squirtle">Squirtle - Água</label>
-                            </form>
-                        </div>
+                        <legend>INICIAIS DE KANTO:</legend>
+                                <P>Charmander - Fogo</P>
+                                <P>Bulbasaur - Grama</P>
+                                <P>Squirtle - Água</P>
+                                <button onclick="kanto()">VER POKEMONS</button>
                     </fieldset>
+                </div>
+                <div class="informacoes" id="pokemon-fire-red">
+                    <div class="pokemon">
+                        <img class="inicial" src="./img/charmander.jpg">
+                        <div class="status">
+                            <p>
+                                Ataque:84 - Ataque especial:109<br>
+                                Defesa:78 - Defesa especial:85 <br>
+                                Pontos de vida:78 - Velocidade:100<br>
+                                Total:534
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemon">
+                        <img class="inicial" src="./img/bulbasaur.jpg">
+                        <div class="status">
+                            <p>
+                                Ataque:82 - Ataque especial:100<br>
+                                Defesa:83 - Defesa especial:100 <br>
+                                Pontos de vida:80 - Velocidade:80<br>
+                                Total:525
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pokemon">
+                        <img class="inicial" src="./img/squirtle.jpg">
+                        <div class="status">
+                            <p>
+                                Ataque:83 - Ataque especial:85<br>
+                                Defesa:100 - Defesa especial:105 <br>
+                                Pontos de vida:79 - Velocidade:78<br>
+                                Total:530
+                            </p>
+                        </div>
+                    </div>
+                    <button class="exibir-pokemons" onclick="closeKanto()">FECHAR</button> 
                 </div>
                 <div class="capa">
                     <img id="ruby" src="./img/ruby.jpg">
