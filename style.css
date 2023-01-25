@@ -1,0 +1,91 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("./img/fundo.jpg");
+}
+header{
+    text-align: center;
+}
+hr{
+    background-color:#383fcf;
+    height: 5px;
+}
+
+#primeiro,#segundo,#terceiro,#quarto{
+    background-color: #383fcf;
+    width: 103px;
+    height: 40px;
+    margin-left: 13%;
+    display: inline-block;
+    text-align: center;
+}
+select{
+    text-align: center;
+}
+.listas{
+    text-align:start;
+    font-weight: bold;
+}
+#fire-red,#ruby,#heart-gold,#emerald,#white-2,#omega-ruby,#platinum{
+    width: 210px;
+    height: 210px;
+}
+.conteudo{
+    height: 230px;
+    display: table;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: white;
+    border-width:2px;
+}
+.capa{
+    width: 205px;
+    height: 210px;
+    margin-top: 10px;
+    margin-left: 40px;
+    display:table-cell;
+    float: left;
+}
+.informacoes{
+    display:table-cell;
+    float: left;
+    width: 190px;
+    margin-top: -4px;
+    margin-left: 10px;
+    line-height: 30px;
+    color: white;
+    font-size:smaller;
+    font-weight: bold;
+}
+section.conjunto{
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 100px;
+    /*    background-color: blue;
+    */
+    width: 500px;
+    height: 250px;
+}
+.rodape{
+    margin-top: 20px;
+    background-color: yellow;
+}
+.informacoes2{
+    display:table-cell;
+    float: left;
+    width: 190px;
+    margin-top: -4px;
+    margin-left: 10px;
+    line-height: 30px;
+    color: white;
+    font-size:smaller;
+    font-weight: bold;
+}
+img{
+    width: 300px;
+    margin: auto;
+}
+fieldset{
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
