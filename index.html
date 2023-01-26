@@ -65,13 +65,19 @@
                     <option value="yellow">yellow</option>
                 </select>
             </div>
+            <div id="quinto" class="inicio">
+                <label id="">Pesquisar</label>
+                <form method="get" action="https://google.com/search">
+                    <input type="text" name="q" />
+                </form>
+            </div>
         </div>
     </header>
     <main>
         <article>
             <section class="conteudo">
                 <div class="capa">
-                    <img id="fire-red" src="./img/fire-red.jpg">
+                    <img class="capa-jogo" id="fire-red" src="./img/fire-red.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -90,22 +96,22 @@
                         <P>Charmander - Fogo</P>
                         <P>Bulbasaur - Grama</P>
                         <P>Squirtle - Água</P>
-                        <button class="botao" onclick="kanto()">VER POKEMONS</button>
+                        <button class="botao" onclick="abrirKanto()">VER POKEMONS</button>
                     </fieldset>
                 </div>
-                <div class="informacoes" id="pokemon-fire-red">
+                <div class="exibir-pokemons" id="pokemon-fire-red">
                     <div class="pokemon">
-                        <img class="inicial" i src="./img/kanto.jpg">
+                        <img class="inicial" id="inicial-kanto" src="./img/kanto.jpg">
                         <div class="legenda-pokemon">
-                            <p class="legenda-pokemon">
+                            <p>
                                 Charmander - Bulbasaur - Squirtle 
                             </p>
                         </div>
-                        <button class="botao" onclick="closeKanto()">FECHAR</button>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
                     </div>
                 </div>
                 <div class="capa">
-                    <img id="ruby" src="./img/ruby.jpg">
+                    <img id="ruby" class="capa-jogo" src="./img/ruby.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -124,10 +130,10 @@
                         <P>Mudkip - Água</P>
                         <P>Treecko - Grama</P>
                         <P>Torchic - Fogo</P>
-                        <button class="botao" onclick="hoenn()">VER POKEMONS</button>
+                        <button class="botao" onclick="abrirHoenn()">VER POKEMONS</button>
                     </fieldset>
                 </div>
-                <div class="informacoes pokemon" id="pokemon-ruby">
+                <div class="exibir-pokemons" id="pokemon-ruby">
                     <div class="pokemon">
                         <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
                         <div class="legenda-pokemon">
@@ -135,13 +141,13 @@
                                 Mudkip - Treecko - Torchic 
                             </p>
                         </div>
-                        <button class="botao" onclick="closeHoenn()">FECHAR</button>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
                     </div>
                 </div>
             </section>
             <section class="conteudo">
                 <div class="capa">
-                    <img id="heart-gold" src="./img/heart-gold.jpg">
+                    <img id="heart-gold" class="capa-jogo" src="./img/heart-gold.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -156,23 +162,26 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Cyndaquil" name="pokemon-heart" value="Cyndaquil">
-                            <label for="Cyndaquil">Cyndaquil - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Chikorita" name="pokemon-heart" value="Chikorita">
-                            <label for="Chikorita">Chikorita - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Totodile" name="pokemon-heart" value="Totodile">
-                            <label for="Totodile">Totodile - Água</label>
-                        </div>
+                        <legend>INICIAIS DE JOHTO:</legend>
+                        <P>Chikorita - Grama</P>
+                        <P>Totodile - Água</P>
+                        <P>Cyndaquil - Fogo</P>
+                        <button class="botao" onclick="abrirJohto()">VER POKEMONS</button>
                     </fieldset>
                 </div>
+                <div class="exibir-pokemons" id="pokemon-heart-gold">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-johto" src="./img/johto.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Chikorita - Totodile - Cyndaquil 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
+                    </div>
+                </div>
                 <div class="capa">
-                    <img id="emerald" src="./img/emerald.jpg">
+                    <img id="emerald" class="capa-jogo" src="./img/emerald.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -187,25 +196,28 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Torchic" name="pokemon-emerald" value="Torchic">
-                            <label for="Torchic">Torchic - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Treecko" name="pokemon-emerald" value="Treecko">
-                            <label for="Treecko">Treecko - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Mudkip" name="pokemon-emerald" value="Mudkip">
-                            <label for="Mudkip">Mudkip - Água</label>
-                        </div>
+                        <legend>INICIAIS DE HOENN:</legend>
+                        <P>Mudkip - Água</P>
+                        <P>Treecko - Grama</P>
+                        <P>Torchic - Fogo</P>
+                        <button class="botao" onclick="abrirHoenn()">VER POKEMONS</button>
                     </fieldset>
+                </div>
+                <div class="exibir-pokemons" id="pokemon-emerald">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Mudkip - Treecko - Torchic 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
+                    </div>
                 </div>
             </section>
             <section class="conteudo">
                 <div class="capa">
-                    <img id="platinum" src="./img/platinum.png">
+                    <img id="platinum" class="capa-jogo" src="./img/platinum.png">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -220,23 +232,26 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Chimchar" name="pokemon-platinum" value="Chimchar">
-                            <label for="Chimchar">Chimchar - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Turtwig" name="pokemon-platinum" value="Turtwig">
-                            <label for="Turtwig">Turtwig - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Piplup" name="pokemon-platinum" value="Piplup">
-                            <label for="Piplup">Piplup - Água</label>
-                        </div>
+                        <legend>INICIAIS DE SINNOH:</legend>
+                        <P>Turtwig - Grama</P>
+                        <P>Chimchar - Fogo</P>
+                        <P>Piplup - Água</P>
+                        <button class="botao" onclick="abrirSinnoh()">VER POKEMONS</button>
                     </fieldset>
                 </div>
+                <div class="exibir-pokemons" id="pokemon-platinum">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-sinnoh" src="./img/sinnoh.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Turtwig - Chimchar - Piplup 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
+                    </div>
+                </div>
                 <div class="capa">
-                    <img id="white-2" src="./img/white-2.jpg">
+                    <img id="white-2" class="capa-jogo" src="./img/white-2.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -251,25 +266,28 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Tepig" name="pokemon-white" value="Tepig">
-                            <label for="">Tepig - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Snivy" name="pokemon-white" value="Snivy">
-                            <label for="">Snivy - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Oshawott" name="pokemon-white" value="Oshawott">
-                            <label for="">Oshawott - Água</label>
-                        </div>
+                        <legend>INICIAIS DE UNOVA:</legend>
+                        <P>Snivy - Grama</P>
+                        <P>Tepig - Fogo</P>
+                        <P>Oshawott - Água</P>
+                        <button class="botao" onclick="abrirUnova()">VER POKEMONS</button>
                     </fieldset>
+                    <div class="exibir-pokemons" id="pokemon-white-2">
+                        <div class="pokemon">
+                            <img class="inicial" id="inicial-hoenn" src="./img/unova.jpg">
+                            <div class="legenda-pokemon">
+                                <p>
+                                    Snivy - Tepig - Oshawott 
+                                </p>
+                            </div>
+                            <button class="botao" onclick="fechar()">FECHAR</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="conteudo">
                 <div class="capa">
-                    <img id="omega-ruby" src="./img/omega-ruby.jpg">
+                    <img id="omega-ruby" class="capa-jogo" src="./img/omega-ruby.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -284,23 +302,26 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Torchic" name="pokemon-omega" value="Torchic">
-                            <label for="Torchic">Torchic - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Treecko" name="pokemon-omega" value="Treecko">
-                            <label for="Treecko">Treecko - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Mudkip" name="pokemon-omega" value="Mudkip">
-                            <label for="Mudkip">Mudkip - Água</label>
-                        </div>
+                        <legend>INICIAIS DE HOENN:</legend>
+                        <P>Mudkip - Água</P>
+                        <P>Treecko - Grama</P>
+                        <P>Torchic - Fogo</P>
+                        <button class="botao" onclick="abrirHoenn()">VER POKEMONS</button>
                     </fieldset>
                 </div>
+                <div class="exibir-pokemons" id="pokemon-omega-ruby">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Mudkip - Treecko - Torchic 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
+                    </div>
+                </div>
                 <div class="capa">
-                    <img id="omega-ruby" src="./img/y.jpg">
+                    <img id="y" class="capa-jogo" src="./img/y.jpg">
                 </div>
                 <div class="informacoes">
                     <p>
@@ -315,20 +336,23 @@
                 </div>
                 <div class="informacoes">
                     <fieldset>
-                        <legend>ESCOLHA UM POKEMON:</legend>
-                        <div>
-                            <input type="radio" id="Fennekin" name="pokemon-y" value="Fennekin">
-                            <label for="">Fennekin - Fogo</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Chespin" name="pokemon-y" value="Chespin">
-                            <label for="">Chespin - Grama</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="Froakie" name="pokemon-y" value="Froakie">
-                            <label for="">Froakie - Água</label>
-                        </div>
+                        <legend>INICIAIS DE KALOS:</legend>
+                        <P>Chespin - Grama</P>
+                        <P>Fennekin - Fogo</P>
+                        <P>Froakie - Água</P>
+                        <button class="botao" onclick="abrirKalos()">VER POKEMONS</button>
                     </fieldset>
+                </div>
+                <div class="exibir-pokemons" id="pokemon-y">
+                    <div class="pokemon">
+                        <img class="inicial" id="inicial-kalos" src="./img/kalos.jpg">
+                        <div class="legenda-pokemon">
+                            <p>
+                                Chespin - Fennekin - Froakie 
+                            </p>
+                        </div>
+                        <button class="botao" onclick="fechar()">FECHAR</button>
+                    </div>
                 </div>
             </section>
         </article>

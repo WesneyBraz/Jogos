@@ -12,14 +12,19 @@ hr {
     height: 5px;
 }
 
-#primeiro,
-#segundo,
-#terceiro,
-#quarto {
+.inicio {
     background-color: #383fcf;
     width: 103px;
     height: 40px;
-    margin-left: 13%;
+    margin-left: 10%;
+    display: inline-block;
+    text-align: center;
+}
+ #quinto {
+    background-color: #383fcf;
+    width: 180px;
+    height: 40px;
+    margin-left: 10%;
     display: inline-block;
     text-align: center;
 }
@@ -33,13 +38,7 @@ select {
     font-weight: bold;
 }
 
-#fire-red,
-#ruby,
-#heart-gold,
-#emerald,
-#white-2,
-#omega-ruby,
-#platinum {
+.capa-jogo {
     width: 210px;
     height: 210px;
 }
@@ -99,8 +98,7 @@ fieldset {
     text-align: center;
 }
 
-#pokemon-fire-red,
-#pokemon-ruby {
+.exibir-pokemons {
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -121,12 +119,8 @@ fieldset {
 }
 
 .inicial {
-    width: 90%;
-    margin: auto;
-}
-
-#inicial-hoenn {
     width: 300px;
+    margin: auto;
 }
 
 .legenda-pokemon {
@@ -138,4 +132,24 @@ fieldset {
 .botao {
     text-align: center;
     margin-bottom: 0px;
+}
+
+#divBusca {
+    background-color: #383fcf;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 200px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 28px;
+    width: 180px;
+}
+#btnBusca{
+    height: 180px;
 }
