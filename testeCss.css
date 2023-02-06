@@ -112,6 +112,7 @@ header .navbar ul li ul li {
     border-top: 1px solid rgb(14, 153, 123);
     background-color: white;
     color: #000;
+    text-align: center;
 }
 
 header .navbar ul li:focus-within>ul,
