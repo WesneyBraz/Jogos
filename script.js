@@ -16,6 +16,7 @@ function abrirUnova(){
 function abrirKalos(){
     document.getElementById('pokemon-y').style.display = 'block';
 }
+//------------------------ abrir iniciais ----------------------------------//
 
 function fechar() {
     document.getElementById('pokemon-fire-red').style.display = 'none';
@@ -24,5 +25,10 @@ function fechar() {
     document.getElementById('pokemon-platinum').style.display = 'none';
     document.getElementById('pokemon-white-2').style.display = 'none';
     document.getElementById('pokemon-y').style.display = 'none';
+}
+
+//------------------------ fechar iniciais ----------------------------------//
+function abrir(){
+    window.open("https://pokemondb.net/pokedex/game/firered-leafgreen")
 }
 
