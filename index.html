@@ -76,72 +76,76 @@
     <main>
         <article>
             <section class="conteudo">
-                <div class="capa">
-                    <img onclick="abrir()" class="capa-jogo" id="fire-red" src="./img/fire-red.jpg">
-                </div>
-                <div class="informacoes">
-                    <p>
-                        Nome: Fire Red <br>
-                        Data de lançamento: 2004 <br>
-                        Geração: 1º <br>
-                        Região: Kanto <br>
-                        Rival: Green <br>
-                        Equipe vilã: Rocket <br>
-                        Console: Game Boy Advence <br>
-                    </p>
-                </div>
-                <div class="informacoes">
-                    <fieldset class="escolhas">
-                        <legend>INICIAIS DE KANTO:</legend>
-                        <P>Charmander - Fogo</P>
-                        <P>Bulbasaur - Grama</P>
-                        <P>Squirtle - Água</P>
-                        <button class="botao" onclick="abrirKanto()">VER POKEMONS</button>
-                    </fieldset>
-                </div>
-                <div class="exibir-pokemons" id="pokemon-fire-red">
-                    <div class="pokemon">
-                        <img class="inicial" id="inicial-kanto" src="./img/kanto.jpg">
-                        <div class="legenda-pokemon">
-                            <p>
-                                Charmander - Bulbasaur - Squirtle 
-                            </p>
+                <div id="div-fire-red">
+                    <div class="capa">
+                        <img onclick="abrir()" class="capa-jogo" id="fire-red" src="./img/fire-red.jpg">
+                    </div>
+                    <div class="informacoes">
+                        <p>
+                            Nome: Fire Red <br>
+                            Data de lançamento: 2004 <br>
+                            Geração: 1º <br>
+                            Região: Kanto <br>
+                            Rival: Green <br>
+                            Equipe vilã: Rocket <br>
+                            Console: Game Boy Advence <br>
+                        </p>
+                    </div>
+                    <div class="informacoes">
+                        <fieldset class="escolhas">
+                            <legend>INICIAIS DE KANTO:</legend>
+                            <P>Charmander - Fogo</P>
+                            <P>Bulbasaur - Grama</P>
+                            <P>Squirtle - Água</P>
+                            <button class="botao" onclick="abrirKanto()">VER POKEMONS</button>
+                        </fieldset>
+                    </div>
+                    <div class="exibir-pokemons" id="pokemon-fire-red">
+                        <div class="pokemon">
+                            <img class="inicial" id="inicial-kanto" src="./img/kanto.jpg">
+                            <div class="legenda-pokemon">
+                                <p>
+                                    Charmander - Bulbasaur - Squirtle
+                                </p>
+                            </div>
+                            <button class="fechar" onclick="fechar()">FECHAR</button>
                         </div>
-                        <button class="fechar" onclick="fechar()">FECHAR</button>
                     </div>
                 </div>
-                <div class="capa">
-                    <img id="ruby" class="capa-jogo" src="./img/ruby.jpg">
-                </div>
-                <div class="informacoes">
-                    <p>
-                        Nome: Ruby <br>
-                        Data de lançamento: 2003 <br>
-                        Geração: 3º <br>
-                        Região: Hoenn <br>
-                        Rival: May/Brendan <br>
-                        Equipe vilã: Magma <br>
-                        Console: Game Boy Advence <br>
-                    </p>
-                </div>
-                <div class="informacoes">
-                    <fieldset class="escolhas">
-                        <legend>INICIAIS DE HOENN:</legend>
-                        <P>Mudkip - Água</P>
-                        <P>Treecko - Grama</P>
-                        <P>Torchic - Fogo</P>
-                        <button class="botao" onclick="abrirHoenn()">VER POKEMONS</button>
-                    </fieldset>
-                </div>
-                <div class="exibir-pokemons" id="pokemon-ruby">
-                    <div class="pokemon">
-                        <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
-                        <div class="legenda-pokemon">
-                            <p>
-                                Mudkip - Treecko - Torchic 
-                            </p>
+                <div id="div-red">
+                    <div class="capa">
+                        <img id="ruby" class="capa-jogo" src="./img/ruby.jpg">
+                    </div>
+                    <div class="informacoes">
+                        <p>
+                            Nome: Ruby <br>
+                            Data de lançamento: 2003 <br>
+                            Geração: 3º <br>
+                            Região: Hoenn <br>
+                            Rival: May/Brendan <br>
+                            Equipe vilã: Magma <br>
+                            Console: Game Boy Advence <br>
+                        </p>
+                    </div>
+                    <div class="informacoes">
+                        <fieldset class="escolhas">
+                            <legend>INICIAIS DE HOENN:</legend>
+                            <P>Mudkip - Água</P>
+                            <P>Treecko - Grama</P>
+                            <P>Torchic - Fogo</P>
+                            <button class="botao" onclick="abrirHoenn()">VER POKEMONS</button>
+                        </fieldset>
+                    </div>
+                    <div class="exibir-pokemons" id="pokemon-ruby">
+                        <div class="pokemon">
+                            <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
+                            <div class="legenda-pokemon">
+                                <p>
+                                    Mudkip - Treecko - Torchic
+                                </p>
+                            </div>
+                            <button class="fechar" onclick="fechar()">FECHAR</button>
                         </div>
-                        <button class="fechar" onclick="fechar()">FECHAR</button>
                     </div>
                 </div>
             </section>
@@ -174,7 +178,7 @@
                         <img class="inicial" id="inicial-johto" src="./img/johto.jpg">
                         <div class="legenda-pokemon">
                             <p>
-                                Chikorita - Totodile - Cyndaquil 
+                                Chikorita - Totodile - Cyndaquil
                             </p>
                         </div>
                         <button class="fechar" onclick="fechar()">FECHAR</button>
@@ -208,7 +212,7 @@
                         <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
                         <div class="legenda-pokemon">
                             <p>
-                                Mudkip - Treecko - Torchic 
+                                Mudkip - Treecko - Torchic
                             </p>
                         </div>
                         <button class="fechar" onclick="fechar()">FECHAR</button>
@@ -244,7 +248,7 @@
                         <img class="inicial" id="inicial-sinnoh" src="./img/sinnoh.jpg">
                         <div class="legenda-pokemon">
                             <p>
-                                Turtwig - Chimchar - Piplup 
+                                Turtwig - Chimchar - Piplup
                             </p>
                         </div>
                         <button class="fechar" onclick="fechar()">FECHAR</button>
@@ -277,7 +281,7 @@
                             <img class="inicial" id="inicial-hoenn" src="./img/unova.jpg">
                             <div class="legenda-pokemon">
                                 <p>
-                                    Snivy - Tepig - Oshawott 
+                                    Snivy - Tepig - Oshawott
                                 </p>
                             </div>
                             <button class="fechar" onclick="fechar()">FECHAR</button>
@@ -314,7 +318,7 @@
                         <img class="inicial" id="inicial-hoenn" src="./img/hoenn.jpg">
                         <div class="legenda-pokemon">
                             <p>
-                                Mudkip - Treecko - Torchic 
+                                Mudkip - Treecko - Torchic
                             </p>
                         </div>
                         <button class="fechar" onclick="fechar()">FECHAR</button>
@@ -348,7 +352,7 @@
                         <img class="inicial" id="inicial-kalos" src="./img/kalos.jpg">
                         <div class="legenda-pokemon">
                             <p>
-                                Chespin - Fennekin - Froakie 
+                                Chespin - Fennekin - Froakie
                             </p>
                         </div>
                         <button class="fechar" onclick="fechar()">FECHAR</button>

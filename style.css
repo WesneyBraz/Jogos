@@ -36,6 +36,7 @@ hr {
     text-align: center;
     border-radius: 5px;
 }
+
 #quinto input {
     border-radius: 5px;
 }
@@ -78,13 +79,12 @@ select {
 
 .conteudo {
     height: 230px;
-    width: 80%;
+    width: 98%;
     display: table;
     margin-top: 20px;
     border-style: solid;
     border-color: white;
     border-width: 2px;
-    margin-left: 10%;
 }
 
 .capa {
@@ -98,7 +98,7 @@ select {
 .informacoes {
     display: table-cell;
     float: left;
-    width: 190px;
+    width: 14%;
     margin-top: -4px;
     margin-left: 10px;
     line-height: 30px;
@@ -112,7 +112,7 @@ select {
     float: left;
     width: 120px;
     margin-top: 10px;
-    margin-left: -10px;
+    margin-left: 10px;
     line-height: 20px;
     color: white;
     font-size: small;
@@ -208,4 +208,16 @@ fieldset {
 
 #btnBusca {
     height: 180px;
+}
+
+
+@media (min-width: 1400px) {
+    .conteudo {
+        width: 70%;
+    }
+}
+
+article {
+    display: grid;
+    place-items: center;
 }
